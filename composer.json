@@ -1,0 +1,38 @@
+{
+    "name": "neves/oauth2-client-facade",
+    "description": "OAuth2 Client Facade",
+    "license": "MIT",
+    "minimum-stability": "dev",
+
+    "authors": [
+        {
+            "name": "Marcos Neves",
+            "email": "marcos.neves@gmail.com"
+        }
+    ],
+
+    "require": {
+        "lusitanian/oauth": "0.1.*@dev"
+    },
+
+    "require-dev": {
+        "paliari/oauth2-server-facade": "dev-master"
+    },
+
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/paliari/oauth2-server-facade.git"
+        }
+    ],
+
+    "autoload": {
+        "psr-0": {
+            "Paliari\\Oauth2ClientFacade\\": "src/"
+        }
+    },
+
+    "scripts": {
+        "post-install-cmd": ["[[ -e phpunit.phar ]] || wget http://pear.phpunit.de/get/phpunit.phar && chmod +x phpunit.phar"]
+    }
+}
