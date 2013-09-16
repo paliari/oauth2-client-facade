@@ -1,10 +1,14 @@
 {
-    "name": "neves/oauth2-client-facade",
+    "name": "paliari/oauth2-client-facade",
     "description": "OAuth2 Client Facade",
     "license": "MIT",
     "minimum-stability": "dev",
 
     "authors": [
+        {
+            "name": "Marcos Paliari",
+            "email": "marcos@paliari.com.br"
+        },
         {
             "name": "Marcos Neves",
             "email": "marcos.neves@gmail.com"
