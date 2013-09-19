@@ -100,6 +100,7 @@ class Controller
         );
         $serviceFactory = new ServiceFactory();
         $serviceFactory->registerService('IsseHom', '\Paliari\Oauth2ClientFacade\IsseHom');
+        $serviceFactory->registerService('IssePro', '\Paliari\Oauth2ClientFacade\IssePro');
         $service = $serviceFactory->createService($id, $credentials, $this->getStorage(), $credential['scopes']);
 
         return $service;
