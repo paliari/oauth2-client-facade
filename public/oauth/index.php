@@ -17,6 +17,11 @@ $credentials = [
         'id'     => 'bjU7Jx0aaLF43txIlbVpPg',
         'secret' => 'DXy1ryNgbma16QjV5xPkreskY6uZLpf1gWlzxbUKA',
         'scopes' => []
+    ],
+    'IsseHom' => [
+        'id'     => 'testclient',
+        'secret' => 'testpass',
+        'scopes' => []
     ]
 ];
 

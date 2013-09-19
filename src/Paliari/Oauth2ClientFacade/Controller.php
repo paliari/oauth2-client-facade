@@ -58,10 +58,8 @@ class Controller
     protected function action_callback($id)
     {
         if ( isset($_GET['code']) ) {
-
             $service = $this->getService($id);
             echo $service->requestAccessToken($_GET['code'])->getAccessToken();
-
         } elseif (isset($_GET['oauth_token'], $_GET['oauth_verifier'])) {
 
             $token = $this->getStorage()->retrieveAccessToken(ucfirst($id));
@@ -100,8 +98,8 @@ class Controller
             $credential['secret'],
             $this->getRootUri() . $this->getCallbackPath($id)
         );
-
         $serviceFactory = new ServiceFactory();
+        $serviceFactory->registerService('IsseHom', '\Paliari\Oauth2ClientFacade\IsseHom');
         $service = $serviceFactory->createService($id, $credentials, $this->getStorage(), $credential['scopes']);
 
         return $service;
