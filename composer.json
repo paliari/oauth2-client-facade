@@ -16,7 +16,7 @@
     ],
 
     "require": {
-        "lusitanian/oauth": "0.1.*@dev"
+        "lusitanian/oauth": "v0.4.*"
     },
 
     "require-dev": {

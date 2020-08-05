@@ -19,8 +19,8 @@ $credentials = [
         'scopes' => []
     ],
     'IsseHom' => [
-        'id'     => '4a266d6734390f606cc19a252ee9d741b8ec70b1',
-        'secret' => '2f491fb06b889c55d787580e432e12a6de12ef11',
+        'id'     => 'testclient',
+        'secret' => 'testpass',
         'scopes' => []
     ],
     'IssePro' => [

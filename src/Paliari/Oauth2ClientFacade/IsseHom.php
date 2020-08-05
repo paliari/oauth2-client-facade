@@ -14,7 +14,7 @@ use OAuth\Common\Http\Uri\UriInterface;
 class IsseHom extends AbstractService
 {
 
-    const BASE_URL = 'https://isseteste.maringa.pr.gov.br/oauth2/';
+    const BASE_URL = 'https://hom-maringa.ecity.com.br/oauth2/';
 
     public function __construct(
         Credentials $credentials,
